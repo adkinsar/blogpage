@@ -58,7 +58,7 @@ public class BlogPostController {
 		return mv;
 	}
 	
-	//shows the form for editing a blog post
+	//deletes blog post
 	@DeleteMapping("/blog_posts/delete/{id}")
 	public ModelAndView deletepost(@PathVariable("id") long id) {
 		ModelAndView mv = new ModelAndView("redirect:/");
